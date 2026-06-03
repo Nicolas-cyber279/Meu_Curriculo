@@ -5,6 +5,8 @@
     font-size: 1.03em;
 }
 main {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -56,16 +58,19 @@ header h3 {
 /*Seções*/
 #sections {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 /*Seção 1*/
 #sec01 {
     width: 30%;
-    height: 80vh;
+    height: 100%;
     background: #e4e4e4;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
     padding: 2%;
 }
 #sec01 h3 {
@@ -111,7 +116,7 @@ header h3 {
 /*Seção 2*/
 #sec02 {
     width: 70%;
-    height: 80vh;
+    height: 100%;
     background: #f8f8f8;
     display: flex;
     flex-wrap: wrap;
@@ -131,8 +136,12 @@ header h3 {
     font-size: 1.3em;
     font-weight: 500;
 }
-.Cotemig span {
-    margin-left: 200px;
+.Cotemig p {
+    margin-bottom: 2%;
+}
+#CotP1 {
+    width: 100%;
+    text-align: center;
 }
 .certificados {
     width: 100%;
@@ -144,21 +153,20 @@ header h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 1%;
 }
 #quadro div {
-    width: 20%;
+    width: 30%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border: #000 solid 1px;
+    margin-left: 3%;
 }
-#cert01 {background-image: url(assets/images/CertCotMasterchef.png);}
-#cert02 {background-image: url(assets/images/CertCybersegCisco.png);}
-#cert03 {background-image: url(assets/images);}
-#cert04 {background-image: url(assets/images);}
-#cert05 {background-image: url(assets/images);}
+#quadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media (max-width: 768px) {
 
@@ -196,9 +204,11 @@ header h3 {
     .liTitulo {
         margin-top: 15%;
     }
-
-    #quadro {
-        flex-direction: column;
+    #sec02 p {
+        text-align: start;
     }
 
+    #quadro {
+        flex-direction: row;
+    }
 }
