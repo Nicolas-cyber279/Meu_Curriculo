@@ -16,9 +16,8 @@ header {
     width: 100%;
     height: 20vh;
     background: #323b4c;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 1%;
+    
 }
 #molduraFoto {
     width: 10%;
@@ -46,21 +45,26 @@ header h1 {
     font-weight: 800;
     letter-spacing: 0.3px;
     text-align: left;
-    margin-top: 1%;
 }
 header h3 {
     color: #FFFFFF;
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 0.5px;
-    margin-top: 1%;
 }
+ulLinguagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 /*Seções*/
 #sections {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 /*Seção 1*/
@@ -71,7 +75,9 @@ header h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2%;
+    padding: 1%;
+    position: sticky;
+    top: 0;
 }
 #sec01 h3 {
     font-size: 1.5em;
@@ -110,7 +116,7 @@ header h3 {
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 /*Seção 2*/
@@ -141,7 +147,7 @@ header h3 {
 }
 #CotP1 {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .certificados {
     width: 100%;
@@ -150,14 +156,11 @@ header h3 {
 #quadro {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1%;
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
 }
 #quadro div {
-    width: 30%;
+    width: 100%;
     height: 100%;
     border: #000 solid 1px;
     margin-left: 3%;
@@ -165,7 +168,7 @@ header h3 {
 #quadro img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -201,6 +204,14 @@ header h3 {
         width: 100%;
         height: auto;
     }
+    #sec01 {
+        position: relative;
+        top: 0
+    }
+    #sec02  ul{
+        padding: 0%;
+    }
+
     .liTitulo {
         margin-top: 15%;
     }
