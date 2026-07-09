@@ -11,7 +11,6 @@ Site de currículo responsivo desenvolvido com HTML e CSS.
 
 - Layout responsivo
 - Links para WhatsApp
-- Integração com Gmail
 - Design moderno
 
 ## Estrutura do Projeto
